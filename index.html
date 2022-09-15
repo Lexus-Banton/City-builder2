@@ -1,39 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>City Builder</title>
+        <link rel="icon" type="image/x-icon" href="assets/honeymilk.webp" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/city.png" alt="logo" />
+            <h1>by Lex B</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section class="controls">
+                <label>
+                    Climate
+                    <select id="Climate-select">
+                        <option value="tropical">Tropical</option>
+                        <option value="desert">Desert</option>
+                        <option value="Polar">Polar</option>
+                        <option value="Neutral">Neutral</option>
+                    </select>
+                    Architecture
+                    <select id="Architecture-select">
+                        <option value="big-city">Big City</option>
+                        <option value="small-town">Small Town</option>
+                        <option value="rural">Rural</option>
+                        <option value="empty">Empty</option>
+                    </select>
+                    <label>
+                        Attractions
+                        <select id="pants-select">
+                            <option value="shrine">Shrine</option>
+                            <option value="dog-statue">Dog statue</option>
+                            <option value="tower">Tower</option>
+                            <option value="Stars">Stars</option>
+                        </select>
+                    </label>
+                    <section class="add-slogan">
+                        <label>
+                            Add a slogan:
+                            <input id="slogan-input">
+                        </label>
+                        <button id="add-button">Add</button>
+                    </section>
+        </main>
+    </body>
 </html>
