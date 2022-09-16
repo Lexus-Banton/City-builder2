@@ -19,7 +19,23 @@ const destination = {
 };
 
 /* Events */
+climateSelect.addEventListener('change', () => {
+    destination.climate = climateSelect.value;
+    displayDestination();
+});
 
+architectureSelect.addEventListener('change', () => {
+    destination.architecture = architectureSelect.value;
+    displayDestination();
+});
+
+attractionsSelect.addEventListener('change', () => {
+    destination.attractions = attractionsSelect.value;
+    displayDestination();
+});
 /* Display Functions */
+function displayDestination() {
+    climateImage.src = '/assets';
+}
 
 // (don't forget to call any display functions you want to run on page load!)
